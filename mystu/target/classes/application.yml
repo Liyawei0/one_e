@@ -1,0 +1,22 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: record
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/one?characterEncoding=UTF8
+    username: root
+    password: root
+  jpa:
+    database: MySQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+#  data:
+#    elasticsearch:
+#      cluster-nodes: 127.0.0.1:9300
+#  redis:
+#    host: localhost
+#  rabbitmq:
+#    host: 127.0.0.1
